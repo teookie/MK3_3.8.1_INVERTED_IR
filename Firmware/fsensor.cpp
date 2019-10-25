@@ -265,7 +265,7 @@ bool fsensor_check_autoload(void)
 	if (!fsensor_enabled) return false;
 	if (!fsensor_autoload_enabled) return false;
 	if (ir_sensor_detected) {
-		if (digitalRead(IR_SENSOR_PIN) == 1) {
+		if (digitalRead(IR_SENSOR_PIN) == 0) { //was 1 is 0
 			fsensor_watch_autoload = true;
 		}
 		else if (fsensor_watch_autoload == true) {
@@ -589,7 +589,7 @@ void fsensor_update(void)
 			fsensor_oq_meassure_enabled = oq_meassure_enabled_tmp;
 		}
 #else //PAT9125
-		if ((digitalRead(IR_SENSOR_PIN) == 1) && CHECK_FSENSOR && fsensor_enabled && ir_sensor_detected && ( ! fsensor_m600_enqueued) )
+		if ((digitalRead(IR_SENSOR_PIN) == 0) && CHECK_FSENSOR && fsensor_enabled && ir_sensor_detected && ( ! fsensor_m600_enqueued) ) //was 1 is 0
 		{
 			fsensor_stop_and_save_print();
 			fsensor_enque_M600();

@@ -4020,7 +4020,7 @@ static void lcd_show_sensors_state()
 		finda_state = mmu_finda;
 	}
 	if (ir_sensor_detected) {
-		idler_state = !PIN_GET(IR_SENSOR_PIN);
+		idler_state = PIN_GET(IR_SENSOR_PIN); //was !PIN_GET is PIN_GET
 	}
 	lcd_puts_at_P(0, 0, _i("Sensor state"));
 	lcd_puts_at_P(1, 1, _i("PINDA:"));
@@ -4844,7 +4844,7 @@ void lcd_v2_calibration()
 	    bool loaded = false;
 	    if (fsensor_enabled && ir_sensor_detected)
 	    {
-	        loaded = (digitalRead(IR_SENSOR_PIN) == 0);
+	        loaded = (digitalRead(IR_SENSOR_PIN) == 1); //was 0 is 1
 	    }
 	    else
 	    {
@@ -8157,7 +8157,7 @@ static bool selftest_irsensor()
         mmu_load_step(false);
         while (blocks_queued())
         {
-            if (PIN_GET(IR_SENSOR_PIN) == 0)
+            if (PIN_GET(IR_SENSOR_PIN) == 1) //was 0 is 1
             {
                 lcd_selftest_error(TestError::TriggeringFsensor, "", "");
                 return false;
