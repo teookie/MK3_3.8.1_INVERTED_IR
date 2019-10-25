@@ -1,0 +1,69 @@
+{
+    "configurations": [
+        {
+            "name": "!!! WARNING !!! AUTO-GENERATED FILE, PLEASE DO NOT MODIFY IT AND USE https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "c:/Users/teook/Documents/Prusa/Firmware/MK3_3.8.1-INVERTED-IR/Prusa-Firmware/include",
+                "c:/Users/teook/Documents/Prusa/Firmware/MK3_3.8.1-INVERTED-IR/Prusa-Firmware/Firmware",
+                "C:/Users/teook/.platformio/packages/framework-arduinoavr/cores/rambo",
+                "C:/Users/teook/.platformio/packages/framework-arduinoavr/variants/rambo",
+                "C:/Users/teook/.platformio/lib/Adafruit DHT Unified_ID18",
+                "C:/Users/teook/.platformio/lib/Adafruit NeoPixel_ID28",
+                "C:/Users/teook/.platformio/lib/Adafruit NeoPixel_ID28@1.1.8",
+                "C:/Users/teook/.platformio/lib/Adafruit Unified Sensor_ID31",
+                "C:/Users/teook/.platformio/lib/ArduinoJson_ID64/src",
+                "C:/Users/teook/.platformio/lib/DHT sensor library_ID19",
+                "C:/Users/teook/.platformio/lib/ESP Async WebServer_ID306/src",
+                "C:/Users/teook/.platformio/lib/FastLED_ID126",
+                "C:/Users/teook/.platformio/lib/IRremoteESP8266_ID1089/src",
+                "C:/Users/teook/.platformio/lib/NeoPixelBus_ID547/src",
+                "C:/Users/teook/.platformio/lib/WS2812FX_ID1647/src",
+                "C:/Users/teook/.platformio/lib/WebSockets_ID549/src",
+                "C:/Users/teook/.platformio/lib/WifiManager_ID567",
+                "C:/Users/teook/.platformio/packages/tool-unity",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "c:/Users/teook/Documents/Prusa/Firmware/MK3_3.8.1-INVERTED-IR/Prusa-Firmware/include",
+                    "c:/Users/teook/Documents/Prusa/Firmware/MK3_3.8.1-INVERTED-IR/Prusa-Firmware/Firmware",
+                    "C:/Users/teook/.platformio/packages/framework-arduinoavr/cores/rambo",
+                    "C:/Users/teook/.platformio/packages/framework-arduinoavr/variants/rambo",
+                    "C:/Users/teook/.platformio/lib/Adafruit DHT Unified_ID18",
+                    "C:/Users/teook/.platformio/lib/Adafruit NeoPixel_ID28",
+                    "C:/Users/teook/.platformio/lib/Adafruit NeoPixel_ID28@1.1.8",
+                    "C:/Users/teook/.platformio/lib/Adafruit Unified Sensor_ID31",
+                    "C:/Users/teook/.platformio/lib/ArduinoJson_ID64/src",
+                    "C:/Users/teook/.platformio/lib/DHT sensor library_ID19",
+                    "C:/Users/teook/.platformio/lib/ESP Async WebServer_ID306/src",
+                    "C:/Users/teook/.platformio/lib/FastLED_ID126",
+                    "C:/Users/teook/.platformio/lib/IRremoteESP8266_ID1089/src",
+                    "C:/Users/teook/.platformio/lib/NeoPixelBus_ID547/src",
+                    "C:/Users/teook/.platformio/lib/WS2812FX_ID1647/src",
+                    "C:/Users/teook/.platformio/lib/WebSockets_ID549/src",
+                    "C:/Users/teook/.platformio/lib/WifiManager_ID567",
+                    "C:/Users/teook/.platformio/packages/tool-unity",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=40003",
+                "ARDUINO_AVR_RAMBO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10805",
+                "__AVR_ATmega2560__",
+                ""
+            ],
+            "intelliSenseMode": "clang-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "\"C:/Users/teook/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe\" -mmcu=atmega2560"
+        }
+    ],
+    "version": 4
+}
